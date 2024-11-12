@@ -120,7 +120,6 @@ func stepsToTrigger(files []string, watch []WatchConfig) ([]Step, error) {
 				}
 
 				if m {
-					log.Printf("matched: %s\n", f)
 					match = true
 					break
 				}
@@ -134,7 +133,6 @@ func stepsToTrigger(files []string, watch []WatchConfig) ([]Step, error) {
 				}
 
 				if sm {
-					log.Printf("skipped: %s\n", f)
 					skip = true
 					break
 				}
@@ -142,7 +140,6 @@ func stepsToTrigger(files []string, watch []WatchConfig) ([]Step, error) {
 		}
 
 		if match && !skip {
-			log.Debug("adding step", w.Step.Trigger)
 			steps = append(steps, w.Step)
 		}
 	}
