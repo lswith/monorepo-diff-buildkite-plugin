@@ -1,6 +1,6 @@
 name: Monorepo Diff
 description: Trigger pipelines on changes in watched folders
-author: https://github.com/buildkite-plugins
+author: https://github.com/lswith
 requirements:
   - git
 configuration:
@@ -97,5 +97,4 @@ configuration:
           type: string
   required:
     - watch
-
 # yaml-language-server: $schema=https://raw.githubusercontent.com/buildkite-plugins/buildkite-plugin-linter/master/lib/plugin-yaml-schema.yml
