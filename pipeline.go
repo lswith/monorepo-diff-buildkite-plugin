@@ -142,7 +142,7 @@ func stepsToTrigger(files []string, watch []WatchConfig) ([]Step, error) {
 		}
 
 		if match && !skip {
-			log.Printf("adding step: %s\n", w.Step.Trigger)
+			log.Debugf("adding step: %s\n", w.Step.Trigger)
 			steps = append(steps, w.Step)
 		}
 	}
